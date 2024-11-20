@@ -1,8 +1,7 @@
 # test_validation.py
 import sys
-
-# Ajoute le dossier 'srcP' au chemin d'importation (relatif au dossier de test)
-sys.path.append('../srcP')
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'srcP')))
 import pytest
 from validation import validate_username, validate_password, validate_email
 
